@@ -60,16 +60,19 @@ section {
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: slateblue;
 }
 
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: rgb(200, 191, 255);
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
+    background-color: rgb(47, 166, 118);
 }
 
 .sec4 {
@@ -96,7 +99,7 @@ section {
   .active-btn {
     background-color: var(--color-secondary) !important;
     transition: all 0.4s ease-in-out;
-    i{
+    i {
       color: var(--color-white) !important;
     }
   }
