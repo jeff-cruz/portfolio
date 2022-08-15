@@ -72,17 +72,33 @@ section {
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
-    background-color: rgb(47, 166, 118);
+  background-color: rgb(47, 166, 118);
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: rgb(209, 82, 234);
 }
 
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: rgb(221, 234, 82);
+}
+
+.active {
+  display: block;
+  animation: scale-anim 1s  ease-in-out;
+  @keyframes scale-anim {
+    0%{
+      transform: translateY(-100%) scaleY(0);
+    }
+
+    100%{
+      transform: translateY(0) scaleY(1);
+    }
+  }
 }
 
 /* controls */

@@ -86,12 +86,44 @@ section {
   display: none;
   transform: translateY(0) scale(1);
   transform: translateY(0) scale(1);
+  background-color: #d152ea;
 }
 
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
   transform: translateY(0) scale(1);
+  background-color: #ddea52;
+}
+
+.active {
+  display: block;
+  animation: scale-anim 1s  ease-in-out;
+  animation: scale-anim 1s  ease-in-out;
+}
+
+@keyframes scale-anim {
+  0% {
+    transform: translateY(-100%) scaleY(0);
+    transform: translateY(-100%) scaleY(0);
+  }
+
+  100% {
+    transform: translateY(0) scaleY(1);
+    transform: translateY(0) scaleY(1);
+  }
+}
+
+@keyframes scale-anim {
+  0% {
+    transform: translateY(-100%) scaleY(0);
+    transform: translateY(-100%) scaleY(0);
+  }
+
+  100% {
+    transform: translateY(0) scaleY(1);
+    transform: translateY(0) scaleY(1);
+  }
 }
 
 /* controls */
