@@ -416,17 +416,18 @@ section {
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      // opacity: 0;
-      // transform: scale(0);
-      // transition: all .4s ease-in-out;
+      opacity: 0;
+      transform: scale(0);
+      transition: all .4s ease-in-out;
       h3{
         font-size: 1.5rem;
         color: var(--color-white);
-        margin-bottom: .75rem;
       }
       .portfolio-desc{
         font-size: .75rem;
-        margin-bottom: .75rem;
+        margin-top: .25rem;
+        margin-bottom: .25rem;
+        padding: 1rem;
         text-align: center;
       }
       .icons{
@@ -465,6 +466,65 @@ section {
 .portfolio-item:hover .hover-items{
   opacity: 1;
   transform: scale(1);
+}
+
+/* Contact Section */
+.contact-content-con{
+  display: flex;
+  padding-top: 3.5rem;
+  .left-contact{
+    flex: 2;
+    h4{
+      margin-top: 1rem;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+      p{
+        margin: 1rem 0;
+        line-height: 2rem;
+      }
+      .contact-info{
+        .contact-item{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          p{
+            margin: .3rem 0 !important;
+            padding: 0 !important;
+        }
+      }
+    }
+  }
+  .right-contact{
+    flex: 3;
+    margin-left: 3rem;
+    .input-control{
+      margin:1.5rem 0;
+      input, textarea{
+        border-radius: 30px;
+        font-weight: inherit;
+        font-size: inherit;
+        font-family: inherit;
+        padding: .8rem 1.1rem;
+        outline: none;
+        border: none;
+        background-color: var(--color-grey5);
+        width: 100%;
+        color: var(--color-white);
+        resize: none;
+      }
+    }
+    .input-control-2{
+      display: flex;
+      :last-child{
+        margin-left: 1.5rem;
+      }
+    }
+    .submit-btn{
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
 }
 
 /* Independent Components*/
