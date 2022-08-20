@@ -149,6 +149,7 @@
 }
 
 @media screen and (max-width: 1070px) {
+
   .about-container{
     grid-template-columns: 1fr;
     .right-about{
@@ -176,6 +177,10 @@
 @media screen and (max-width: 1432px){
   header{
     padding: 0 !important;
+  }
+
+  .header-content .left-header {
+    margin-right: 2rem;
   }
 
   .section{

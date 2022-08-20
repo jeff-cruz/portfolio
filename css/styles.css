@@ -391,6 +391,10 @@ section {
   padding-right: 3rem;
 }
 
+.about-container .left-about h4 {
+  padding-left: 1rem;
+}
+
 .about-container .left-about p {
   line-height: 2rem;
   padding: 1rem;
@@ -400,6 +404,15 @@ section {
 .about-container .left-about h4 {
   font-size: 2rem;
   text-transform: uppercase;
+}
+
+.about-container .left-about .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .about-stats {
@@ -1102,6 +1115,9 @@ section {
 @media screen and (max-width: 1432px) {
   header {
     padding: 0 !important;
+  }
+  .header-content .left-header {
+    margin-right: 2rem;
   }
   .section {
     padding: 7rem 11rem;

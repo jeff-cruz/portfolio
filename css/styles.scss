@@ -282,6 +282,9 @@ section {
 
   .left-about{
     padding-right: 3rem;
+    h4{
+      padding-left: 1rem;
+    }
     p{
       line-height: 2rem;
       padding: 1rem;
@@ -290,6 +293,10 @@ section {
     h4{
       font-size: 2rem;
       text-transform: uppercase;
+    }
+    .btn-container{
+      display: flex;
+      justify-content: center;
     }
   }
 }
