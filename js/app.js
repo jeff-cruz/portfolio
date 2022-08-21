@@ -43,3 +43,10 @@ function ActiveBtn() {
 }
 
 ActiveBtn();
+
+// Submit form button
+const submitBtn = document.querySelector('submit-btn');
+submitBtn.addEventListener('click', handleSubmit);
+function handleSubmit(event) {
+  event.preventDefault();
+}
