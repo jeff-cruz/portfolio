@@ -64,7 +64,7 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 3rem 18rem;
+  padding: 3rem 16rem;
 }
 
 .section {
@@ -491,7 +491,7 @@ section {
 }
 
 .about-stats .progress-bars .progress-bar .progress .node {
-  width: 30%;
+  width: 40%;
 }
 
 .about-stats .progress-bars .progress-bar .progress .sql {
@@ -672,9 +672,9 @@ section {
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -691,14 +691,6 @@ section {
   font-size: 1.5rem;
   color: var(--color-white);
   margin: 0 1rem;
-}
-
-.portfolios .portfolio-item .hover-items .icons .icon:hover {
-  background-color: var(--color-white);
-}
-
-.portfolios .portfolio-item .hover-items .icons .icon:hover i {
-  color: var(--color-primary);
 }
 
 .portfolio-item:hover .hover-items {
@@ -739,9 +731,9 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .contact-content-con .left-contact .contact-info .contact-item p {
@@ -997,9 +989,6 @@ section {
 }
 
 @media screen and (max-width: 600px) {
-  .section {
-    padding: 2rem 2.5rem !important;
-  }
   .contact-content-con {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1053,7 +1042,7 @@ section {
 
 @media screen and (max-width: 970px) {
   .section {
-    padding: 7rem 6rem;
+    padding: 2rem 2.5rem;
   }
   header {
     padding: 0;
@@ -1069,6 +1058,10 @@ section {
   .header-content .left-header .img {
     margin: 0 auto;
     padding: 2rem;
+  }
+  .about-stats .progress-bars {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
   .left-header .h-shape {
     display: none;
@@ -1116,6 +1109,9 @@ section {
 }
 
 @media screen and (max-width: 1070px) {
+  .section {
+    padding: 4rem 10rem;
+  }
   .about-container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -1132,8 +1128,8 @@ section {
     padding-left: 0;
   }
   .about-stats .progress-bars {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: repeat 2fr, 1fr;
+        grid-template-columns: repeat 2fr, 1fr;
   }
   .timeline {
     -ms-grid-columns: 1fr;
@@ -1164,7 +1160,7 @@ section {
     margin-right: 2rem;
   }
   .section {
-    padding: 7rem 6rem;
+    padding: 5rem 12rem;
   }
   .contact-content-con {
     -webkit-box-orient: vertical;
@@ -1187,13 +1183,13 @@ section {
     margin-top: 1.5rem;
   }
   .main-title h2 {
-    font-size: 4.2rem;
+    font-size: 3.8rem;
   }
   .main-title h2 span {
-    font-size: 4.2rem;
+    font-size: 3.8rem;
   }
   .main-title h2 .bg-text {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
