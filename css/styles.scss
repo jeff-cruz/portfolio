@@ -438,7 +438,7 @@ section {
 
 .portfolios{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   margin-top: 3rem;
   .portfolio-item{
@@ -524,33 +524,34 @@ section {
       font-size: 2rem;
       text-transform: uppercase;
     }
-      p{
-        margin: 1rem 0;
-        line-height: 2rem;
+    p{
+      margin: 1rem 0;
+      line-height: 2rem;
+    }
+    .contact-info{
+      .contact-item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p{
+          margin: .3rem 0 !important;
+          padding: 0 !important;
       }
-      .contact-info{
-        .contact-item{
+      .icon{
+        display: flex;
+        grid-template-columns: 40px, 1fr;
+        i{
           display: flex;
-          align-items: center;
-          justify-content: space-between;
-          p{
-            margin: .3rem 0 !important;
-            padding: 0 !important;
-        }
-        .icon{
-          display: grid;
-          grid-template-columns: 40px, 1fr;
-          i{
-            display: flex;
-            align-items: center;
-            font-size: 1.3rem;
-          }
+          font-size: 1.3rem;
+          padding-right: .5rem;
         }
       }
     }
+  }
 
     .contact-icon{
       display: flex;
+      justify-content: center;
       margin-top: 2rem;
       a{
         display: flex;
@@ -603,9 +604,40 @@ section {
         margin-left: 1.5rem;
       }
     }
-    .submit-btn{
+    .submit-btn-container{
       display: flex;
-      justify-content: flex-start;
+      justify-content: flex-end;
+      button{
+        cursor: pointer;
+        border-radius: 30px;
+        background-color: var(--color-secondary);
+        color: var(--color-white);
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        position: relative;
+        border: 1px solid var(--color-secondary);
+        display: flex;
+        align-self: flex-start;
+        align-items: center;
+        overflow: hidden;
+        &:active{
+          transform: translateY(3px);
+        }
+        .btn-text {
+          padding: 0 2rem;
+        }
+
+        .btn-icon {
+          border: 1px solid var(--color-secondary);
+          background-color: var(--color-secondary);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          padding: 1rem 1.5rem 1rem 1rem;
+        }
+      }
     }
   }
 }
@@ -657,8 +689,8 @@ section {
 }
 
 .main-title {
-  text-align: center;
   h2{
+    text-align: center;
     position: relative;
     text-transform: uppercase;
     font-size: 4rem;
@@ -679,5 +711,6 @@ section {
     }
   }
 }
+
 
 @import './media';
