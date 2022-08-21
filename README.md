@@ -1,3 +1,3 @@
-# ajax-project
+My Portfolio!
 
-A dynamic HTML, CSS, and JavaScript solo project.
+Technologies: HTML, CSS, SASS, JavaScript
