@@ -989,6 +989,29 @@ section {
 }
 
 @media screen and (max-width: 600px) {
+  .about-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .about-container .right-about {
+    -ms-grid-columns: (1fr)[2fr];
+        grid-template-columns: repeat(2fr, 1fr);
+    padding-top: 2.5rem;
+  }
+  .about-container .left-about {
+    padding-right: 0;
+  }
+  .about-container .left-about p {
+    padding-left: 0;
+  }
+  .timeline {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .portfolios {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
   .contact-content-con {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1010,7 +1033,7 @@ section {
     margin-top: 1.5rem;
   }
   .main-title h2 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .main-title h2 span {
     font-size: 2.5rem;
@@ -1078,6 +1101,21 @@ section {
   .right-header .name {
     font-size: 2.5rem !important;
   }
+  .portfolios {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding-bottom: 3rem;
+  }
+  .contact-content-con {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 3.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
   .controls {
     top: auto;
     bottom: 0;
@@ -1108,9 +1146,9 @@ section {
   }
 }
 
-@media screen and (max-width: 1070px) {
-  .section {
-    padding: 4rem 10rem;
+@media screen and (min-width: 971px) and (max-width: 1070px) {
+  .header-content .left-header {
+    margin-right: 2rem;
   }
   .about-container {
     -ms-grid-columns: 1fr;
@@ -1141,6 +1179,12 @@ section {
         grid-template-columns: 1fr;
     padding-bottom: 6rem;
   }
+  .contact-content-con {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .main-title h2 {
     font-size: 4rem;
   }
@@ -1152,21 +1196,18 @@ section {
   }
 }
 
-@media screen and (max-width: 1432px) {
+@media screen and (min-width: 1071px) and (max-width: 1432px) {
   header {
     padding: 0 !important;
   }
   .header-content .left-header {
     margin-right: 2rem;
   }
-  .section {
-    padding: 5rem 12rem;
-  }
   .contact-content-con {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .contact-content-con .right-contact {
     margin-left: 0;

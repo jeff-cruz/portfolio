@@ -1,4 +1,29 @@
 @media screen and (max-width: 600px) {
+  .about-container {
+    grid-template-columns: 1fr;
+
+    .right-about {
+      grid-template-columns: repeat(2fr, 1fr);
+      padding-top: 2.5rem;
+    }
+
+    .left-about {
+      padding-right: 0;
+
+      p {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .timeline{
+    grid-template-columns: 1fr;
+  }
+
+  .portfolios{
+    grid-template-columns: 1fr;
+  }
+
   .contact-content-con{
     flex-direction: column;
     .right-contact{
@@ -18,7 +43,7 @@
 
   .main-title{
     h2{
-      font-size: 2rem;
+      font-size: 1rem;
       span{
         font-size: 2.5rem;
       }
@@ -104,6 +129,19 @@
     }
   }
 
+  .portfolios {
+    grid-template-columns: 1fr;
+    padding-bottom: 3rem;
+  }
+
+  .contact-content-con {
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 3.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .controls {
     top: auto;
     bottom: 0;
@@ -134,10 +172,10 @@
   }
 }
 
-@media screen and (max-width: 1070px) {
-  .section {
-      padding: 4rem 10rem;
-    }
+@media screen and (min-width: 971px) and (max-width: 1070px) {
+  .header-content .left-header {
+    margin-right: 2rem;
+  }
 
   .about-container {
     grid-template-columns: 1fr;
@@ -172,6 +210,14 @@
     padding-bottom: 6rem;
   }
 
+
+
+  .contact-content-con {
+    flex-direction: column;
+  }
+
+
+
   .main-title{
     h2{
       font-size: 4rem;
@@ -185,7 +231,7 @@
   }
 }
 
-@media screen and (max-width: 1432px){
+@media screen and (min-width: 1071px) and (max-width: 1432px){
   header{
     padding: 0 !important;
   }
@@ -194,12 +240,8 @@
     margin-right: 2rem;
   }
 
-  .section {
-    padding: 5rem 12rem;
-  }
-
   .contact-content-con {
-      flex-direction: column;
+      flex-direction: row;
 
       .right-contact {
         margin-left: 0;
