@@ -1,3 +1,3 @@
 My Portfolio!
 
-Technologies: HTML, CSS, SASS, JavaScript
+Technologies: HTML, SCSS, JavaScript
