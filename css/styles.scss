@@ -434,13 +434,13 @@ section {
 .port-text{
   padding: 2rem 0;
   text-align: center;
+  text-decoration: underline;
 }
 
 .portfolios{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
-  margin-top: 3rem;
   .portfolio-item{
     position: relative;
     img{
